@@ -1,0 +1,159 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: calibri;
+}
+
+
+body {
+	background-color: white;
+	color: black;
+  }
+  .header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
+  }
+  .dark-mode {
+	background-color: black;
+	color: white;
+  }
+  .switch {
+   font-size: 17px;
+   position: relative;
+   display: inline-block;
+   width: 62px;
+   height: 35px;
+  }
+  
+  .switch input {
+   opacity: 1;
+   width: 0;
+   height: 0;
+  }
+  
+  .slider {
+   position: absolute;
+   cursor: pointer;
+   top: -10px;
+   left: 0;
+   right: 0;
+   bottom: 10px;
+   background: #fff;
+   transition: .4s;
+   border-radius: 30px;
+   border: 1px solid #ccc;
+  }
+  
+  .slider:before {
+   position: absolute;
+   content: "";
+   height: 1.9em;
+   width: 1.9em;
+   border-radius: 16px;
+   left: 1.2px;
+   top: 0;
+   bottom: 0;
+   background-color: white;
+   box-shadow: 0 2px 5px #999999;
+   transition: .4s;
+  }
+  
+  input:checked + .slider {
+   background-color: #5fdd54;
+   border: 1px solid transparent;
+  }
+  
+  input:checked + .slider:before {
+   transform: translateX(1.5em);
+  }
+  
+nav{
+	width: 100%;
+	height: 80px;
+	background:rgb(25, 25, 239);
+}
+label.logo{
+	font-size: 35px;
+	color: white;
+	margin: 0 100px;
+	line-height: 80px;
+}
+nav ul{
+	float: right;
+	list-style-type: none;
+}
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	text-transform: capitalize;
+	padding: 8px 20px;
+}
+nav ul li a.active,a:hover{
+	background: rgb(17, 210, 33);
+}
+#checkbtn{
+	float: right;
+	line-height: 80px;
+	margin-right: 10px;
+	font-size: 30px;
+	color: white;
+	display: none;
+}
+#check{
+	display: none;
+}
+#check:checked ~ ul{
+	left: 0;
+}
+
+
+@media(max-width: 992px){
+	label.logo{
+		margin:0px 70px;
+		font-size: 25px;
+
+	}
+	#checkbtn{
+		display: block;
+	}
+	nav ul{
+		width: 100%;
+		height: 100vh;
+		background: #de3747;
+		position: fixed;
+		top:80px;
+		left: -100%;
+		transition: .5s;
+	}
+	nav ul li{
+		display: block;
+		text-align: center;
+		line-height:50px;
+		margin:15px;
+	}
+} 
+
+@media screen and (max-width: 405px) {
+	label.logo{
+		font-size:20px;
+		margin:0px 30px;
+	}
+}
+@media screen and (max-width: 290px) {
+	label.logo{
+		font-size:20px;
+		margin:0px 0px;
+	}
+}
+
