@@ -8,7 +8,7 @@
 
 body {
 	background-color: white;
-	color: black;
+	color:black ;
   }
   .header {
 	position: fixed;
@@ -21,7 +21,7 @@ body {
   }
   .dark-mode {
 	background-color: black;
-	color: white;
+	color:white;
   }
   .switch {
    font-size: 17px;
@@ -32,7 +32,7 @@ body {
   }
   
   .switch input {
-   opacity: 1;
+   opacity: 0;
    width: 0;
    height: 0;
   }

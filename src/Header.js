@@ -1,5 +1,6 @@
 import React from "react";
 import './Header.css' 
+import  DarkMode from './DarkMode';
 
 function Header(){
     return(
@@ -7,7 +8,7 @@ function Header(){
         <nav>
 		<label class="switch">
 			<input type="checkbox"/>
-			<span className="slider" onclick="onDarkMode()"></span>
+			<DarkMode />
 		</label>
 		<input type="checkbox" id="check" name="" value=""/>
 		<label for="check" id="checkbtn"><i class="fa fa-bars"></i></label>
@@ -22,12 +23,5 @@ function Header(){
 	</nav>
     </>
     )
-}
-function onDarkMode() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
- }
- export {
-    Header,
-    onDarkMode
- } 
+}  
+export default Header;
