@@ -8,17 +8,17 @@ function Footer(){
                         <ul class="list-unstyled footer-link mt-4">
                             <li><a href="">Pages</a></li>
                             <li><a href="">Our Team</a></li>
-                            <li><a href="">Feuchers</a></li>
+                            <li><a href="">About us</a></li>
                             <li><a href="">Pricing</a></li>
                         </ul>
                 </section>
               <section>
-              <h6 class="footer-heading">Ressources</h6>
+              <h6 class="footer-heading">Resources</h6>
                         <ul class="list-unstyled footer-link mt-4">
                             <li><a href="">Monitoring Grader </a></li>
                             <li><a href="">Video Tutorial</a></li>
                             <li><a href="">Term &amp; Service</a></li>
-                            <li><a href="">Zeeko API</a></li>
+                            <li><a href=""></a></li>
                         </ul>  
               </section>
                 <section>
@@ -33,7 +33,7 @@ function Footer(){
                 <section>
                 <h6 class="footer-heading">Contact Us</h6>
                         <p class="contact-info">Contact us if need help with anything</p>
-                            <p class="contact-info">Location : Haryana,INDIA</p>
+                            <p class="contact-info">Location : Haryana , INDIA</p>
                             <p class="contact-info">Email :itsinstagramhelp@gmail.com</p>
                 </section>
 
