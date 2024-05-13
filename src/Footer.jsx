@@ -32,14 +32,9 @@ function Footer(){
                 </section>      
                 <section>
                 <h6 class="footer-heading">Contact Us</h6>
-                        <p class="contact-info">Contact us if need help withanything</p>
-                        <p class="contact-info">+01 123-456-7890</p>
-                            <ul class="list-inline">
-                                <li class="list-inline-item"><a href="#"><i class="fab facebook footer-social-icon fa-facebook-f"/></a></li>
-                                <li class="list-inline-item"><a href="#"><i class="fab twitter footer-social-icon fa-twitter"/></a></li>
-                                <li class="list-inline-item"><a href="#"><i class="fab google footer-social-icon fa-google"/></a></li>
-                                <li class="list-inline-item"><a href="#"><i class="fab apple footer-social-icon fa-apple"/></a></li>
-                            </ul>
+                        <p class="contact-info">Contact us if need help with anything</p>
+                            <p class="contact-info">Location : Haryana,INDIA</p>
+                            <p class="contact-info">Email :itsinstagramhelp@gmail.com</p>
                 </section>
 
                  
