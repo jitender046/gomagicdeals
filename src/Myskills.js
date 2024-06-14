@@ -1,6 +1,6 @@
 import React from "react";
 import './Myskills.css'
-import { faTwitter, faFontAwesome } from '@fortawesome/free-brands-svg-icons'
+// import { faTwitter, faFontAwesome } from '@fortawesome/free-brands-svg-icons'
 function Myskills(){
 return(
     <>
@@ -17,28 +17,28 @@ return(
                         <h2>HTML</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam perspiciatis fugit debitis laudantium, sed numquam neque at, praesentium exercitationem culpa ipsam? Nihil.
                         </p>
-                        <a href="#" class="read">Learn More</a>
+                        <a href="https://jitendershakya046.blogspot.com/2024/05/html.html" class="read">Learn More</a>
                     </div>
                     <div>
                       <i class='bx bxl-css3' id="css"></i>
                       <h2>CSS</h2>
                       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam perspiciatis fugit debitis laudantium, sed numquam neque at, praesentium exercitationem culpa ipsam? Nihil.
                       </p>
-                      <a href="#" class="read">Learn More</a>
+                      <a href="/css" class="read">Learn More</a>
                   </div>
                     <div>
                         <i class='bx bxl-javascript' id="javascript"></i>
                         <h2>JavaScript</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam perspiciatis fugit debitis laudantium, sed numquam neque at, praesentium exercitationem culpa ipsam? Nihil.
                         </p>
-                        <a href="#" class="read">Learn More</a>
+                        <a href="/JavaScript" class="read">Learn More</a>
                     </div>
                     <div>
                         <i class='bx bxl-react' id="react"></i>
                         <h2>React</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam perspiciatis fugit debitis laudantium, sed numquam neque at, praesentium exercitationem culpa ipsam? Nihil.
                         </p>
-                        <a href="#" class="read">Learn More</a>
+                        <a href="/React" class="read">Learn More</a>
                     </div>
                 </div>
             </div>
