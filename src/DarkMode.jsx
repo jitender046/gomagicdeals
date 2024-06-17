@@ -12,7 +12,7 @@ const DarkMode = () => {
     return () => {
       bodyElement.classList.remove('dark-mode');
     };
-  }, []);
+  }, );
 
   return (
 <label class="switch">
