@@ -1,6 +1,7 @@
 import React from "react";
 import './Myskills.css'
-// import { faTwitter, faFontAwesome } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHtml5,faCss3Alt,faJs,faReact} from '@fortawesome/free-brands-svg-icons'
 function Myskills(){
 return(
     <>
@@ -12,29 +13,28 @@ return(
                 <div class="services-list">
                     
                     <div>
-                    {/* <FontAwesomeIcon icon="fa-brands fa-html5" /> */}
-                        {/* <i class='bx bxl-html5' id="html"></i> */}
+                    <i id="html"><FontAwesomeIcon icon={faHtml5} /></i>
                         <h2>HTML</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam perspiciatis fugit debitis laudantium, sed numquam neque at, praesentium exercitationem culpa ipsam? Nihil.
                         </p>
                         <a href="https://jitendershakya046.blogspot.com/2024/05/html.html" class="read">Learn More</a>
                     </div>
                     <div>
-                      <i class='bx bxl-css3' id="css"></i>
+                        <i id="css"><FontAwesomeIcon icon={faCss3Alt} /></i>
                       <h2>CSS</h2>
                       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam perspiciatis fugit debitis laudantium, sed numquam neque at, praesentium exercitationem culpa ipsam? Nihil.
                       </p>
                       <a href="/css" class="read">Learn More</a>
                   </div>
                     <div>
-                        <i class='bx bxl-javascript' id="javascript"></i>
+                        <i id="javascript"><FontAwesomeIcon icon={faJs} /></i>
                         <h2>JavaScript</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam perspiciatis fugit debitis laudantium, sed numquam neque at, praesentium exercitationem culpa ipsam? Nihil.
                         </p>
                         <a href="/JavaScript" class="read">Learn More</a>
                     </div>
                     <div>
-                        <i class='bx bxl-react' id="react"></i>
+                        <i id="react"><FontAwesomeIcon icon={faReact} /></i>
                         <h2>React</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam perspiciatis fugit debitis laudantium, sed numquam neque at, praesentium exercitationem culpa ipsam? Nihil.
                         </p>
