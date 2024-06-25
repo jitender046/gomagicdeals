@@ -1,4 +1,5 @@
 // import './App.css';
+import './Result.css'
 import Search from './Search';
 import Result from './Result';
 import { useEffect, useState } from 'react';
@@ -30,7 +31,7 @@ import { useEffect, useState } from 'react';
   },[search])
   console.log(Weather);
   return (
-    <div className="App">
+    <div className="WeatherApp">
       <Search searchData={search} eventHandler={changeSearch} />
      <div className='r'> <Result weatherData={Weather}/></div>
     </div>

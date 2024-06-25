@@ -1,0 +1,47 @@
+.WeatherApp{
+    display: grid;
+    border: 2px solid red;
+    line-height:1.5;
+    justify-content:center;
+    background-color: skyblue;
+    padding-top:25px;
+    gap: 15px;
+    width: 100%;
+    height: 85vh;
+}
+.search{
+    display: flex;
+    justify-content:space-between;
+    height:25px;
+}
+input{
+    width: 72%;
+    height:50px;
+    border-radius: 25px;
+    padding-left:10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+button{
+    width: 25%;
+    height: 50px;
+    border-radius: 25px;
+    padding: 10px 10px 10px 10px;
+}
+.r{
+    display: grid;
+    width: 450px;
+    height: 500px;
+    justify-content: center;
+}
+.result{
+    width: 350px;
+    text-align: center;
+    padding-top: 15px;
+    border: 2px solid pink;
+}
+.styled{
+    font-size:20px;
+    font-size: bold;
+}
