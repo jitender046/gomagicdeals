@@ -1,6 +1,5 @@
 .WeatherApp{
     display: grid;
-    border: 2px solid red;
     line-height:1.5;
     justify-content:center;
     background-color: skyblue;
@@ -39,7 +38,6 @@ button{
     width: 350px;
     text-align: center;
     padding-top: 15px;
-    border: 2px solid pink;
 }
 .styled{
     font-size:20px;
