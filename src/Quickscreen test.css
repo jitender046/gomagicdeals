@@ -1,0 +1,8 @@
+.QuickscreenTest{
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+   justify-content: center;
+    background-color: aqua;
+}
+.Question{padding: 15px;}
