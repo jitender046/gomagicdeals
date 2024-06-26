@@ -1,8 +1,47 @@
-.QuickscreenTest{
+.screen{
     width: 100%;
+    height: 85vh;
     display: flex;
-    /* flex-direction: column; */
-   justify-content: center;
-    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
 }
-.Question{padding: 15px;}
+.QuickscreenTest{
+    width: 60%;
+    display: flex;
+    background-color: aqua;
+    border-radius: 25px;
+}
+.Question-box{width: 100%;}
+.Question-box h2{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    
+}
+.Question{
+    padding: 15px 15px 15px 85px;
+}
+.Question-box ul {
+  list-style: none;
+}
+.Question-box ul li {
+    margin: 5px;
+    padding: 7px 15px 2px 85px;
+}
+.Question-box ul li button {
+    padding:15px;
+    border-radius:25px;
+    background-color: aliceblue;
+}
+#center{
+    display: flex;
+    justify-content: center;
+}
+#center button{
+    background-color: blue;
+    color: aliceblue;
+    padding: 5px 15px 5px 15px;
+    font-size: 25px;
+    border-radius: 25px;
+}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Quickscreen test.css';
+
 function QuizTest() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
@@ -21,6 +22,11 @@ function QuizTest() {
       answers: ['Vatican City', 'Monaco', 'Nauru', 'Tuvalu'],
       correct: 0,
     },
+    {
+      question: 'Thanks for giving the QuickscreenTest',
+      answers: [],
+      // correct: 0,
+    },
   ];
 
   const handleAnswer = (answerIndex) => {
@@ -35,37 +41,36 @@ function QuizTest() {
   };
 
   return (
-    <div className='QuickscreenTest'>
+    <div className="screen">
+      <div className='QuickscreenTest'>
       {showResults? (
         <div>
           <h2>Results</h2>
           <p>
-            You scored {score} out of {questions.length}.
+            You scored {score} out of {questions.length-1}.
           </p>
         </div>
       ) : (
         <div className='Question-box'>
           <h2>Quickscreen Test</h2>
-          {/* <p>Question {currentQuestion + 1} of {questions.length}</p> */}
+          {/* <p>Question {currentQuestion + 1} of {questions.length-1}</p> */}
           <h3 className='Question'>{questions[currentQuestion].question}</h3>
           <ul>
             {questions[currentQuestion].answers.map((answer, index) => (
               <li key={index}>
-                {/* <input type='checkbox' onClick={() => handleAnswer(index)}>{answer}</input> */}
                 <button onClick={() => handleAnswer(index)}>{answer}</button>
               </li>
             ))}
           </ul>
-          {currentQuestion === questions.length - 1? (
-            <button onClick={handleShowResults}>Show Results</button>
+          {/* button change code here... */}
+          {currentQuestion === questions.length -1? (
+            <h2 id='center'><button  onClick={handleShowResults}>Show Results</button></h2>
           ) : (
-            
-            <button onClick={() => setCurrentQuestion(currentQuestion + 1)}>
-              Next Question
-            </button>
+            <h2 id='center'><button  onClick={() => setCurrentQuestion(currentQuestion + 1)}> Next Question &raquo;</button></h2>
           )}
         </div>
       )}
+    </div>
     </div>
   );
 }

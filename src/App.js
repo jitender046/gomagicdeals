@@ -5,6 +5,7 @@ import Header  from './Header';
 // import Footer from "./Footer";
 // import Weather from './WeatherApp';
 import QuizTest from './Quickscreen test';
+import Question from './QuizTest';
 
 function App() {
   return (
