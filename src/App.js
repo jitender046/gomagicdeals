@@ -4,13 +4,13 @@ import Header  from './Header';
 // import Myskills from './Myskills'
 // import Footer from "./Footer";
 // import Weather from './WeatherApp';
-import QuizTest from './Quickscreen test';
-
+// import QuizTest from './Quickscreen test';
+import Youtube from './YoutubeApp';
 function App() {
   return (
     <div className="App">
       <Header/>
-      <QuizTest/>
+      <Youtube/>
     </div>
   );
 }
