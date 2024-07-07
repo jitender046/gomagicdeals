@@ -1,18 +1,45 @@
-.youtube{
-    width: 100%;
+.container{display: flex;}
+.main{
+  display: flex;
+  width: 100%;
+  gap: 2%;
 }
+.sidebar{
+  width: 18%;
+  height: 89vh;
+  padding-left: 1%;
+  border: 2px solid red;
+  overflow: hidden;
+  cursor: pointer;
+}
+.sidebar:hover {
+  overflow-y: scroll;
+}
+.youtube{
+  width: 80%;
+  height: 89vh;
+  border: 2px solid red;
+  overflow-y: scroll;
+}
+.sidebarTitle{
+  font-size: 1rem;
+  font-weight: 500;
+  /* padding-left: 10px; */
+  padding:10px;
+  
+}
+
 .youtube ul {
     width: 100%;
     /* height:70%; */
     list-style: none;
-    padding: 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  /* .youtube ul li{width: 100%;height:100%;} */
+ 
   .youtube ul li .video-thumbnails{
     width: 97%;
-    height:70%;
+    height:60%;
     border-radius: 25px;
   }.youtube .title-logo .video-title{
     width: 90%;
@@ -22,13 +49,14 @@
     font-size: 11px;
     width: 95%;
   }
-  .youtube .title-logo{display: flex;}
+  .youtube .title-logo{display: flex; cursor: pointer;}
   .youtube .title-logo .logo{
     width: 15%;
     height: 15%;
+    /* border: 2px solid red; */
   }
   .youtube .title-logo .logo img{
-    width: 60px;
+    width: 40px;
     border-radius: 50px;
 }
   .youtube .title-logo .title{
