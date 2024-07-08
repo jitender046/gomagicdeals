@@ -6,8 +6,8 @@ import SwitchAccountOutlinedIcon from '@mui/icons-material/SwitchAccountOutlined
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse ,faFire,faBolt,faChevronRight,faClockRotateLeft,faPodcast,faThumbsUp,faList,faGear,
-  faBagShopping,faClapperboard,faTrophy,faLightbulb,faCircleQuestion, faFlag,faNewspaper,faVestPatches} from '@fortawesome/free-solid-svg-icons';
+import { faHouse ,faFire,faBolt,faChevronRight,faClockRotateLeft,faVideo,faPodcast,faThumbsUp,faList,faGear,
+  faBagShopping,faClapperboard,faTrophy,faLightbulb,faMagnifyingGlass,faBell,faCircleQuestion,faMicrophone, faFlag,faNewspaper,faVestPatches} from '@fortawesome/free-solid-svg-icons';
   import{faYoutube} from '@fortawesome/free-brands-svg-icons'
 import  './YoutubeApp.css';
 
@@ -27,6 +27,20 @@ function Youtube() {
   }, [api]);
 
   return (
+    <>
+    <div className="container">
+      <div className="div1">
+       <FontAwesomeIcon icon={faList}  /> &nbsp; &nbsp;  &nbsp; &nbsp;  <FontAwesomeIcon id='youtube' icon={faYoutube} /> <b>YouTube</b><sup className='in' >IN</sup>
+      </div>
+      <div className="div2">
+        <input type='search' placeholder='Search' /><button><FontAwesomeIcon icon={faMagnifyingGlass} /></button>  &nbsp; &nbsp;  <span><FontAwesomeIcon icon={faMicrophone} /></span>
+      </div>
+      <div className="div3">
+       <div className="icon"><FontAwesomeIcon icon={faVideo} /></div>
+       <div className="icon"><FontAwesomeIcon icon={faBell} /></div>
+       <div className="icon"><img className='logo' src='https://lh3.googleusercontent.com/ogw/AF2bZyjfF3GiuOUfoX6SEDNNYmXGs9b4Jow-vuPs5dJoYp-jgeI=s32-c-mo' alt='logo' /></div>
+      </div>
+    </div>
     <div className='main'>
       <div className="sidebar">
         <div className="sidebarItem">
@@ -112,6 +126,29 @@ function Youtube() {
         </div>
       </div>
       <div className="youtube">
+        <div className="youtube__header">
+          <span className='youtube__header_button' >All</span>
+          <span className='youtube__header_button' >Music</span>
+          <span className='youtube__header_button' >Gaming</span>
+          <span className='youtube__header_button'>Web pages</span>
+          <span className='youtube__header_button'>News</span>
+          <span className='youtube__header_button'>Indian pop music</span>
+          <span className='youtube__header_button'>1990s</span>
+          <span className='youtube__header_button'>Alka Yagnik</span>
+          <span className='youtube__header_button'>T-Series</span>
+          <span className='youtube__header_button'>Movie musicals</span>
+          <span className='youtube__header_button'>Live</span>
+          <span className='youtube__header_button'>Jukebox</span>
+          <span className='youtube__header_button'>Mixes</span>
+          <span className='youtube__header_button'>Computers</span>
+          <span className='youtube__header_button'>B Praak</span>
+          <span className='youtube__header_button'>Indian soap operas</span>
+          <span className='youtube__header_button'>Amit Trivedi</span>
+          <span className='youtube__header_button'>Thrillers</span>
+          <span className='youtube__header_button'>Recently upload</span>
+          <span className='youtube__header_button'>Watched</span>
+          <span className='youtube__header_button'>New to you</span>
+        </div>
       <ul>
         {videos.slice(1)?.map((video) => (
           <li key={video.id?.videoId}>
@@ -133,7 +170,7 @@ function Youtube() {
       </ul>
       </div>
     </div>
-    // {/* </div> */}
+    </>
   );
 }
 
