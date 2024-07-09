@@ -13,19 +13,22 @@ import  './YoutubeApp.css';
 
 function Youtube() {
   const [videos, setVideos] = useState([]);
-  // const apiKey = 'AIzaSyAtYsa1Af4sqy-YSRBCz7_B2V493dgTJbM';
-  const api=`https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UC6FE82LQoJwXKJhL9vYaxFg&maxResults=25&q=golduvgaming&videoCaption=videoCaptionUnspecified&videoDefinition=any&videoDuration=any&videoType=any&key=AIzaSyAtYsa1Af4sqy-YSRBCz7_B2V493dgTJbM`;
+  const [searchQuery, setSearchQuery] = useState('');
+
+  //  const apiKey = 'AIzaSyAtYsa1Af4sqy-YSRBCz7_B2V493dgTJbM';
+  const api=`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=27&q=${searchQuery}&videoCaption=videoCaptionUnspecified&videoDefinition=any&videoDuration=any&videoType=any&key=AIzaSyAtYsa1Af4sqy-YSRBCz7_B2V493dgTJbM`;
+
+  // const api=`https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UC6FE82LQoJwXKJhL9vYaxFg&maxResults=25&q=${searchQuery}&videoCaption=videoCaptionUnspecified&videoDefinition=any&videoDuration=any&videoType=any&key=AIzaSyAtYsa1Af4sqy-YSRBCz7_B2V493dgTJbM`;
   useEffect(() => {
     const fetchVideos = async () => {
       const response = await fetch(api);
       const data = await response.json();
       const videos = data.items;
-      setVideos(videos);
+      setVideos(videos);  
     };
 
     fetchVideos();
-  }, [api]);
-
+  }, [searchQuery , api]);
   return (
     <>
     <div className="container">
@@ -33,7 +36,8 @@ function Youtube() {
        <FontAwesomeIcon icon={faList}  /> &nbsp; &nbsp;  &nbsp; &nbsp;  <FontAwesomeIcon id='youtube' icon={faYoutube} /> <b>YouTube</b><sup className='in' >IN</sup>
       </div>
       <div className="div2">
-        <input type='search' placeholder='Search' /><button><FontAwesomeIcon icon={faMagnifyingGlass} /></button>  &nbsp; &nbsp;  <span><FontAwesomeIcon icon={faMicrophone} /></span>
+        <input type='search' placeholder='Search' value={searchQuery}
+    onChange={(e) => setSearchQuery(e.target.value)} /><button><FontAwesomeIcon icon={faMagnifyingGlass} /></button>  &nbsp; &nbsp;  <span><FontAwesomeIcon icon={faMicrophone} /></span>
       </div>
       <div className="div3">
        <div className="icon"><FontAwesomeIcon icon={faVideo} /></div>
@@ -150,17 +154,16 @@ function Youtube() {
           <span className='youtube__header_button'>New to you</span>
         </div>
       <ul>
-        {videos.slice(1)?.map((video) => (
-          <li key={video.id?.videoId}>
-           <a href={`https://www.youtube.com/watch?v=${video.id?.videoId}`}>
+        {videos?.map((video) => (
+          <li key={video?.id?.videoId}>
+           <a href={`https://www.youtube.com/watch?v=${video?.id?.videoId}`}>
               <img className='video-thumbnails' src={video.snippet.thumbnails.default.url} alt='video_thumbnails'/>
               </a>
               <div className="title-logo">
-                <div className="logo"><img src='https://lh3.googleusercontent.com/ogw/AF2bZyjfF3GiuOUfoX6SEDNNYmXGs9b4Jow-vuPs5dJoYp-jgeI=s32-c-mo' alt='youtube_chaneel_logo'/></div>
+                <div className="logo"><img src={video.snippet.thumbnails.default.url} alt="channel_icon" /></div>
                  <div className="title">
                  <p className='video-title'>{video.snippet.title}</p>
-                 {/* <p className='description'>{video.snippet.description}</p> */}
-                 <p>Gold UV Gaming</p>
+                 <p className='channelTitle'>{video.snippet.channelTitle}</p>
                  <p>179K views 11 months ago</p>
                  </div>
               </div>
