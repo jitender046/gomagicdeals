@@ -7,7 +7,6 @@
     display: flex;
     gap: 100px;
     justify-content: space-evenly;
-    padding: 0% 5% 0% 5%;
 }
 .footer-heading {
     letter-spacing: 2px;
