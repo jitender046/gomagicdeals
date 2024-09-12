@@ -22,11 +22,7 @@ function QuizTest() {
       answers: ["Vatican City", "Monaco", "Nauru", "Tuvalu"],
       correct: 0,
     },
-    {
-      question: "Thanks for giving the QuickscreenTest",
-      answers: ["Vatican City", "Monaco", "Nauru", "Tuvalu"],
-      correct: 0,
-    },
+    
   ];
 
   const handleAnswer = (answerIndex) => {
@@ -41,11 +37,24 @@ function QuizTest() {
   };
 
   const handleBack = () => {
-    if (currentQuestion > 0 && currentQuestion < questions.length - 1) {
+    if (currentQuestion > 0) {
       setCurrentQuestion(currentQuestion - 1);
     }
   };
+  // const onComplete = () => {
+  //   const url = 'about:blank'; // open a blank page
+  //   const newTab = window.open(url, '_blank');
+  //   newTab.document.write('Your test completed successfully!');
+  // };
 
+  const handleNext = () => {
+    if (currentQuestion < questions.length - 1) {
+      setCurrentQuestion(currentQuestion + 1);
+    }
+    else{
+      alert("Your test submit successfully!", setCurrentQuestion(currentQuestion + 1))
+    }
+  };
   return (
     <div className="screen">
       <div className="QuickscreenTest">
@@ -89,8 +98,9 @@ function QuizTest() {
             ) : (
               <h2 id="center">
                 <button onClick={handleBack}>&laquo; Back Question</button>
-                <button onClick={() => setCurrentQuestion(currentQuestion + 1)}> Next Question &raquo;</button>
-              </h2>
+                <button onClick={handleNext}>
+                  {currentQuestion === questions.length - 1 ? 'Submit' : 'Next Question'}&raquo;
+                </button>              </h2>
 
             )}
           </div>

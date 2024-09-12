@@ -3,14 +3,14 @@ import './App.css';
 // import TodoApp from './TodoApp';
 // import Myskills from './Myskills'
 // import Footer from "./Footer";
-import Weather from './WeatherApp';
-// import QuizTest from './Quickscreen test';
+// import Weather from './WeatherApp';
+import QuizTest from './Quickscreen test';
 // import Youtube from './YoutubeApp';
 function App() {
   return (
     <div className="App">
-      <Weather/>
-      {/* <QuizTest/> */}
+      {/* <Weather/> */}
+      <QuizTest/>
       {/* <TodoApp/> */}
       {/* <Header/> */}
       {/* <Youtube/> */}
