@@ -4,13 +4,15 @@ import './App.css';
 // import Myskills from './Myskills'
 // import Footer from "./Footer";
 // import Weather from './WeatherApp';
-import QuizTest from './Quickscreen test';
+// import QuizTest from './Quickscreen test';
 // import Youtube from './YoutubeApp';
+import CoffeeCards from './coffee/CoffeeCards.js'
 function App() {
   return (
-    <div className="App">
+    <div className="App">  
+    < CoffeeCards/>
       {/* <Weather/> */}
-      <QuizTest/>
+      {/* <QuizTest/> */}
       {/* <TodoApp/> */}
       {/* <Header/> */}
       {/* <Youtube/> */}
