@@ -1,11 +1,59 @@
+.CoffeeCards{
+    display: flex;
+    justify-content: center;
+    margin: 160px auto 10px auto;
+
+}
 .slider-container{
     width: 95%;
-    background-color: aqua;
     align-items: center;
 }
-.slider{
-    align-items: center;
+.index-hero-image img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%; 
+        border-radius: 30px;
+        
+}
+.CoffeeCards h2{
     text-align: center;
-    align-content: center;
-    border: 2px solid red;
+    font-weight: bold;
+    font-size: 30px;
 }
+.Home-page-play-pause-button  button{
+    margin: 10px 30px 0px 30px;
+    padding: 8px 10px 8px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 25px;
+    background-color: rgb(11, 114, 216);
+    color: aliceblue;
+    border: none;
+}
+.skip-line {
+    width: 95%;
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+
+  }
+  .skip-line hr {
+    width: 98%;
+    margin-top: 13px;
+    /* border: 2px solid red; */
+  }
+ .Login-div{
+    display: flex;
+    justify-content: center;
+ }
+  .CoffeeCards .login {
+    margin-top: 20px;
+    padding: 5px 0px 5px 0px;
+   font-size: 25px;
+   background-color: rgb(11, 68, 202);
+   color: aliceblue;
+   border: none;
+   border-radius: 25px;
+   width: 20%;
+  }

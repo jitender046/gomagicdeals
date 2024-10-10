@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import Slider from "react-slick";
-import './Coffee.css'
+import "./Coffee.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -14,43 +14,78 @@ function AutoPlayMethods() {
   };
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000
+    autoplaySpeed: 2000,
   };
   return (
-    <div className="slider-container">
-      <h2>Auto Play {"&"} Pause with buttons</h2>
-      <Slider ref={slider => (sliderRef = slider)} {...settings} className="slider">
-        <div>
-          <h3>1</h3>
+    <div className="CoffeeCards">
+      <div className="slider-container">
+        <Slider
+          ref={(slider) => (sliderRef = slider)}
+          {...settings}
+          className="slider"
+        >
+          <div className="index-hero-image">
+            <img
+              src={require("../Images/slider/index-hero-1.png")}
+              alt="Hero  1"
+            />
+          </div>
+          <div className="index-hero-image">
+            <img
+              src={require("../Images/slider/index-hero-2.png")}
+              alt="Hero  2"
+            />
+          </div>
+          <div className="index-hero-image">
+            <img
+              src={require("../Images/slider/index-hero-3.png")}
+              alt="Hero  3"
+            />
+          </div>
+          <div className="index-hero-image">
+            <img
+              src={require("../Images/slider/index-hero-1.png")}
+              alt="Hero  1"
+            />
+          </div>
+          <div className="index-hero-image">
+            <img
+              src={require("../Images/slider/index-hero-2.png")}
+              alt="Hero  2"
+            />
+          </div>
+          <div className="index-hero-image">
+            <img
+              src={require("../Images/slider/index-hero-3.png")}
+              alt="Hero  3"
+            />
+          </div>
+        </Slider>
+        <h2>Best Coffee in the world</h2>
+        <div
+          className="Home-page-play-pause-button"
+          style={{ textAlign: "center" }}
+        >
+          <button className="button" onClick={play}>
+            Play
+          </button>
+          <button className="button" onClick={pause}>
+            Pause
+          </button>
         </div>
-        <div>
-          <h3>2</h3>
+        <div className="skip-line">
+          <hr />
+          <span>Sign_Up</span>
         </div>
-        <div>
-          <h3>3</h3>
-        </div>
-        <div>
-          <h3>4</h3>
-        </div>
-        <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
-        </div>
-      </Slider>
-      <div style={{ textAlign: "center" }}>
-        <button className="button" onClick={play}>
-          Play
-        </button>
-        <button className="button" onClick={pause}>
-          Pause
-        </button>
+
+<div className="Login-div">
+  <button className="login">Log in</button>
+</div>
       </div>
     </div>
   );
