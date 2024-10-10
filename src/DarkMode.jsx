@@ -17,7 +17,7 @@ const DarkMode = () => {
   return (
 <label class="switch">
   <input type="checkbox"  onClick={toggleDarkMode}/>
-  <div class="slider"></div>
+  <div class="dark-mode-slider"></div>
   <div class="slider-card">
     <div class="slider-card-face slider-card-front"></div>
     <div class="slider-card-face slider-card-back"></div>

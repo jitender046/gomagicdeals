@@ -37,7 +37,7 @@ body {
    height: 0;
   }
   
-  .slider {
+  .dark-mode-slider {
    position: absolute;
    cursor: pointer;
    top: -10px;
@@ -50,7 +50,7 @@ body {
    border: 1px solid #ccc;
   }
   
-  .slider:before {
+  .dark-mode-slider:before {
    position: absolute;
    content: "";
    height: 1.9em;
@@ -64,12 +64,12 @@ body {
    transition: .4s;
   }
   
-  input:checked + .slider {
+  input:checked + .dark-mode-slider {
    background-color: #5fdd54;
    border: 1px solid transparent;
   }
   
-  input:checked + .slider:before {
+  input:checked + .dark-mode-slider:before {
    transform: translateX(1.5em);
   }
   

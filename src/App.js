@@ -1,5 +1,5 @@
 import './App.css';
-// import Header  from './Header';
+import Header  from './Header';
 // import TodoApp from './TodoApp';
 // import Myskills from './Myskills'
 // import Footer from "./Footer";
@@ -9,12 +9,12 @@ import './App.css';
 import CoffeeCards from './coffee/CoffeeCards.js'
 function App() {
   return (
-    <div className="App">  
+    <div className="App"> 
+          <Header/> 
     < CoffeeCards/>
       {/* <Weather/> */}
       {/* <QuizTest/> */}
       {/* <TodoApp/> */}
-      {/* <Header/> */}
       {/* <Youtube/> */}
     </div>
   );

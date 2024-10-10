@@ -1,7 +1,7 @@
 .CoffeeCards{
     display: flex;
     justify-content: center;
-    margin: 160px auto 10px auto;
+    margin: 20px auto 10px auto;
 
 }
 .slider-container{
@@ -12,24 +12,26 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 90%; 
+        width: 95%; 
         border-radius: 30px;
         
 }
 .CoffeeCards h2{
+    margin: 25px;
     text-align: center;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 50px;
 }
 .Home-page-play-pause-button  button{
     margin: 10px 30px 0px 30px;
     padding: 8px 10px 8px 10px;
-    font-size: 15px;
+    font-size: 25px;
     font-weight: bold;
     border-radius: 25px;
     background-color: rgb(11, 114, 216);
     color: aliceblue;
     border: none;
+    width: 20%;
 }
 .skip-line {
     width: 95%;
