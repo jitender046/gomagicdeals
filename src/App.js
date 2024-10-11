@@ -7,11 +7,15 @@ import Header  from './Header';
 // import QuizTest from './Quickscreen test';
 // import Youtube from './YoutubeApp';
 import CoffeeCards from './coffee/CoffeeCards.js'
+import Login from './Loginsignup.jsx';
+import Signup from './Login Signup/Signup.jsx'
 function App() {
   return (
     <div className="App"> 
           <Header/> 
     < CoffeeCards/>
+    <Login />
+    <Signup/>
       {/* <Weather/> */}
       {/* <QuizTest/> */}
       {/* <TodoApp/> */}
