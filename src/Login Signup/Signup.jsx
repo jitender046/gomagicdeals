@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import swal from 'sweetalert';
+import { Button, TextField } from '@mui/material';
 function SignUp() {
   const [name, setName] = useState("");
-  const [lastName, setLastName] = useState("");
+  // const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState(null);
   const [passwordType, setPasswordType] = useState("password");
+  
 
   const validateEmail = (email) => {
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -28,7 +30,7 @@ function SignUp() {
       if (validatePassword(password)) {
         if (password === confirmPassword) {
           localStorage.setItem("name", name);
-          localStorage.setItem("lastName", lastName);
+          // localStorage.setItem("lastName", lastName);
           localStorage.setItem("email", email);
           localStorage.setItem("password", password);
           swal({
@@ -51,27 +53,59 @@ function SignUp() {
 
   return (
     <div className="App">
-      <div className="form">
-        <div className="login">Sign Up</div><br /><br />
-        First Name: 
-        <input type="text" placeholder="Enter your Name" onChange={(e) => setName(e.target.value)} /><br /><br />
-        Last Name: 
-        <input type="text" placeholder="Enter your Last Name" onChange={(e) => setLastName(e.target.value)} /><br /><br />
-        Email id: 
-        <input type="email" placeholder="Email or Phone number" onChange={(e) => setEmail(e.target.value)} /><br /><br />
-        Password: 
-        <input type={passwordType} placeholder="Enter your password" onChange={(e) => setPassword(e.target.value)} />
-        <i className="fa fa-eye" onClick={handlePasswordToggle} style={{ cursor: "pointer" }}></i><br /><br />
-        Confirm Password: 
-        <input type={passwordType} placeholder="Confirm your password" onChange={(e) => setConfirmPassword(e.target.value)} />
-        <i className="fa fa-eye" onClick={handlePasswordToggle} style={{ cursor: "pointer" }}></i><br /><br />
-
-        <button onClick={handleSignUp}>Sign UP</button>&nbsp;&nbsp;
-        {error && <p style={{ color: error === "Signup successful!" ? 'green' : 'red' }}>{error}</p>}
-        <button className="show-password" onClick={handlePasswordToggle}>
+    <div className="all-content-center">
+      <div className="signup">
+    <div className="form">
+      <p>Welcome to</p>
+        <h1> CoffeeBreak ☕</h1>
+        <p>We serve coffee from all around the world.<br/>Create a free account and enjoy it!</p>
+        <TextField 
+        id="standard-basic" 
+        label="Enter  Name" 
+        InputLabelProps={{style : {color : 'white'} }} 
+        variant="standard" 
+        onChange={(e) => setName(e.target.value)} 
+        />
+        <br /><br />
+        <TextField
+         id="standard-basic"
+          label="Enter  Email" 
+          InputLabelProps={{style : {color : 'white'} }}
+          variant="standard"
+          onChange={(e) => setEmail(e.target.value)} 
+        />
+        <br /><br />
+        <TextField 
+          id="standard-password-input"
+          InputLabelProps={{style : {color : 'white'} }} 
+          label="Password" 
+          type={passwordType} 
+          autoComplete="current-password" 
+          variant="standard"
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <br /><br />
+        <TextField
+        id="standard-password-input"
+        InputLabelProps={{style : {color : 'white'} }} 
+        type={passwordType} 
+        label="Confirm password" 
+        variant="standard" 
+        onChange={(e) => setConfirmPassword(e.target.value)} 
+        />
+        <br/>
+         <Button style={{ color: 'white' }} variant="text" className="show-password" onClick={handlePasswordToggle}>
           {passwordType === 'password' ? 'Show' : 'Hide'}
-        </button>
-      </div>
+        </Button><br/><br/>
+        <Button variant="contained" onClick={handleSignUp}>Register</Button>
+        {error && <p style={{ color: error === "Signup successful!" ? 'green' : 'red' }}>{error}</p>}
+              <br/><br/><br/><br/>
+              <p className='already-account'> Already have an account ?</p>
+              <Button variant="contained" className='already-account-button'color='secondary' >Log in</Button>
+
+              </div>
+              </div>
+    </div>
     </div>
   );
 }

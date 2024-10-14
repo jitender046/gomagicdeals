@@ -1,0 +1,72 @@
+/* Styles for the form container */
+.all-content-center{
+  justify-content: center;
+  background-image: url("C:\Users\jitender\OneDrive\Desktop\coffee-beans.jpg");
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.signup{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+.signup .form {
+  /* display: flex; */
+  padding: 1rem;
+  width: 70%;
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:chocolate;
+  text-align: center;
+  align-items: center;
+}
+.login .form {
+  /* display: flex; */
+  padding: 1rem;
+  width: 70%;
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:chocolate;
+
+
+}
+
+.login ,.signup {
+  width: 50%;
+  font-size: 25px;
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  margin: 2% 15% 4% 15%;
+  color: aliceblue;
+}
+.textfiled-gap{
+  margin-right: 16px;
+}
+a {
+  text-decoration: none;
+}
+.show-password{
+  text-decoration: none;
+
+}
+#standard-basic{
+  align-items: left;
+  color: aliceblue;
+}
+#standard-password-input{
+color: aliceblue;
+align-items: left;
+}
+.already-account{
+  font-size: 15px;
+}
+.already-account-button{
+  width: 35%;
+  background-color: blanchedalmond;
+}
