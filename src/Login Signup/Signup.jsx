@@ -38,7 +38,7 @@ function SignUp() {
             text: "Message!",
             type: "success"
         }).then(function() {
-            window.location = "https://www.bing.com/";
+            window.location = "#";
         });
         } else {
           setError("Passwords do not match!");

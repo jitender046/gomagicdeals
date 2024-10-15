@@ -70,3 +70,7 @@ align-items: left;
   width: 35%;
   background-color: blanchedalmond;
 }
+.sweetalert-pop-button{
+  color:white;
+  background-color: blue;
+}
