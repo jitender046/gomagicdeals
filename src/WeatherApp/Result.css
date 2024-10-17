@@ -19,7 +19,7 @@
     justify-content:space-between;
     height:20%;
 }
-input{
+ .search input{
     width: 72%;
     height:50px;
     border-radius: 25px;
@@ -28,7 +28,7 @@ input{
     padding-top: 10px;
     padding-bottom: 10px;
 }
-button{
+.search button{
     width: 25%;
     height: 50px;
     border-radius: 25px;

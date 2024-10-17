@@ -1,0 +1,37 @@
+/* ...........................counters...................................... */
+.counters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	background: hsl(333, 84%, 52%);
+	color: #fff;
+	padding: 40px 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+	/* border-top: 3px lightskyblue solid; */
+}
+
+.counters {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 25px;
+	text-align: center;
+}
+
+.counters .counter {
+	font-size: 45px;
+	margin: 10px 0;
+}
+
+@media (max-width: 700px) {
+	.counters .container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.counters .container > div:nth-of-type(1),
+	.counters .container > div:nth-of-type(2) {
+		border-bottom: 1px lightskyblue solid;
+		padding-bottom: 20px;
+	}
+}
+/* ......................................................... */

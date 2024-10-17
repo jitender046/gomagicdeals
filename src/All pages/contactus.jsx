@@ -8,7 +8,7 @@ function Contact() {
    <>
     <Header />
     <div class="contact">
-      <h2>SEND US A MESSAGE</h2>
+      <h1>SEND US A MESSAGE</h1>
       <div class="hr-row">
         <span>
           <hr />

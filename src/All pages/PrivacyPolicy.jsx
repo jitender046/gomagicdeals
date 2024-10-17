@@ -69,7 +69,7 @@ function PrivacyPolicy() {
           <strong>
             If you have any questions or concerns about our privacy policy,
             please contact us at{" "}
-            <a href="https://jitendershakya046.blogspot.com/p/about-us_27.html">
+            <a href="https://gomagicdeals.kesug.com/contact/">
               Here
             </a>
             .
