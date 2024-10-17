@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Button, TextField } from "@mui/material";
 import swal from "sweetalert";
 import "./Loginsignup.css";
+import Header from '../Header Footer/Header.js';
+import Footer from '../Header Footer/Footer.jsx';
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -32,6 +34,8 @@ function Login() {
   };
 
   return (
+    <>
+    <Header />
     <div className="App">
       <div className="all-content-center">
         <div className="login">
@@ -84,6 +88,8 @@ function Login() {
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 }
 

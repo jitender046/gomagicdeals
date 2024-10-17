@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import swal from 'sweetalert';
 import { Button, TextField } from '@mui/material';
+import Header from '../Header Footer/Header.js';
+import Footer from '../Header Footer/Footer.jsx';
 function SignUp() {
   const [name, setName] = useState("");
   // const [lastName, setLastName] = useState("");
@@ -52,6 +54,8 @@ function SignUp() {
   };
 
   return (
+    <>
+    <Header />
     <div className="App">
     <div className="all-content-center">
       <div className="signup">
@@ -107,6 +111,8 @@ function SignUp() {
               </div>
     </div>
     </div>
+<Footer />
+</>
   );
 }
 

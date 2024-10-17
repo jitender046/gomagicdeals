@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './Quickscreen test.css';
-
+import Header from "../Header Footer/Header";
+import Footer from "../Header Footer/Footer";
 function QuizTest() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
@@ -41,11 +42,7 @@ function QuizTest() {
       setCurrentQuestion(currentQuestion - 1);
     }
   };
-  // const onComplete = () => {
-  //   const url = 'about:blank'; // open a blank page
-  //   const newTab = window.open(url, '_blank');
-  //   newTab.document.write('Your test completed successfully!');
-  // };
+ 
 
   const handleNext = () => {
     if (currentQuestion < questions.length - 1) {
@@ -56,6 +53,8 @@ function QuizTest() {
     }
   };
   return (
+    <>
+    <Header />
     <div className="screen">
       <div className="QuickscreenTest">
         {showResults ? (
@@ -107,6 +106,8 @@ function QuizTest() {
         )}
       </div>
     </div>
+    <Footer />
+    </>
   );
 }
 

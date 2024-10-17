@@ -26,7 +26,7 @@ export default function Result({ weatherData , searchQuery }) {
       <h2>{city.name}</h2>
       <div className="all1">
         <div>
-          <img src={`http://openweathermap.org/img/wn/${list[0].weather[0].icon}@2x.png`} />
+          <img src={`http://openweathermap.org/img/wn/${list[0].weather[0].icon}@2x.png`}  alt="Sunrise"/>
         </div>
         <div>
           Description

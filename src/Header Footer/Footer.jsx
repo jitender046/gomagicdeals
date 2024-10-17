@@ -13,16 +13,16 @@ function Footer() {
                 <h6 className="footer-heading">Information</h6>
               </li>
               <li>
-                <Link to="/pages">Pages</Link>
+                <Link to="/quickscreen">QuickScreen Test</Link>
               </li>
               <li>
-                <Link to="/our">Our Team</Link>
+                <Link to="/weather">Weather</Link>
               </li>
               <li>
-                <Link to="/about">About us</Link>
+                <Link to="/youtube">Youtube</Link>
               </li>
               <li>
-                <Link to="/price">Pricing</Link>
+                <Link to="/todo">ToDo</Link>
               </li>
             </ul>
           </section>
@@ -35,7 +35,7 @@ function Footer() {
                 <Link to="/youtube">Youtube</Link>
               </li>
               <li>
-                <Link to="/video">Video Tutorial</Link>
+                <Link to="/privacy">Privacy Policy</Link>
               </li>
               <li>
                 <Link to="/ter">Term & Service</Link>
@@ -56,7 +56,7 @@ function Footer() {
                 <Link to="/login">Login</Link>
               </li>
               <li>
-                <Link to="/term">Terms of Services</Link>
+                <Link to="/term">Home</Link>
               </li>
               <li>
                 <Link to="/todo-app">TodoApp </Link>

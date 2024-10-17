@@ -1,5 +1,6 @@
 /* Styles for the form container */
 .all-content-center{
+  width: 100%;
   justify-content: center;
   background-image: url("C:\Users\jitender\OneDrive\Desktop\coffee-beans.jpg");
   display: flex;

@@ -5,7 +5,10 @@ import TodoApp from "./TodoApp/TodoApp.jsx";
 import Signup from './Login Signup/Signup.jsx'
 import Login from './Login Signup/Login.jsx'
 import Youtube from "./YouTube/YoutubeApp.jsx";
-
+import QuizTest from "./QuickScreen/Quickscreen test.jsx";
+import WeatherApp from "./WeatherApp/WeatherApp.jsx";
+import PrivacyPolicy from "./All pages/PrivacyPolicy.jsx";
+import Contact from "./All pages/contactus.jsx";
 
 const AllRoute = () => {
   return (
@@ -15,6 +18,11 @@ const AllRoute = () => {
       <Route path='/signup' element={<Signup />} />
       <Route path='/login' element={<Login />} />
       <Route path='/youtube' element={<Youtube />} />
+      <Route path="/quickscreen" element={<QuizTest />} />
+      <Route path="/weather" element={<WeatherApp />} />
+      <Route path="/privacy" element={<PrivacyPolicy />} />
+      <Route path="/contact" element={<Contact />} />
+
     </Routes>
   )
 }
