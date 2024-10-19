@@ -2,6 +2,7 @@ import React, { useState , useEffect  } from "react";
 import './Quickscreen test.css';
 import Header from "../Header Footer/Header";
 import Footer from "../Header Footer/Footer";
+import swal from "sweetalert";
 
 function QuizTest() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -55,35 +56,21 @@ function QuizTest() {
   ];
 
   useEffect(() => {
-    const getRandomQuestions = (array, num) => {
-      const shuffled = shuffleArray(array);
-      return shuffled.slice(0, num); // Get the first 'num' elements from the shuffled array
+    const getRandomQuestions = (questions, num) => {
+      return questions.slice(0, num); 
     };
 
-  function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
-    }
-    return array;
-  }
-  
-  // function getRandomQuestions(array, num) {
-  //   const shuffled = shuffleArray(array);
-  //   return shuffled.slice(0, num); // Get the first 'num' elements from the shuffled array
-  // }
+
   setRandomQuestions(getRandomQuestions(questions, 5));
 },[]);
 console.log(randomQuestions);
 
-//   let random = questions.sort(() => Math.random() - 0.5);
-// console.log(random);
+  let random = questions.sort(() => Math.random() - 0.5);
 
   const handleAnswer = (answerIndex) => {
     if (answerIndex === questions[currentQuestion].correct) {
       setScore(score + 1);
     }
-    // setCurrentQuestion(currentQuestion + 1);
   };
 
   const handleShowResults = () => {
@@ -102,8 +89,13 @@ console.log(randomQuestions);
       setCurrentQuestion(currentQuestion + 1);
     }
     else{
-      alert("Your test submit successfully!", setCurrentQuestion(currentQuestion + 1))
+      swal({
+        title: "Wow!",
+        text: "Message!",
+        type: "success" 
+    })
     }
+    setCurrentQuestion(currentQuestion + 1)
   };
   return (
     <>
