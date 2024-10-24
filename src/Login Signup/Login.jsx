@@ -108,7 +108,6 @@ function Login() {
               </div>
               <br />
               <p className="already-account">
-                {" "}
                 Don't have an account ? <a href="./sign-up.html">Sign Up</a>
               </p>
             </div>

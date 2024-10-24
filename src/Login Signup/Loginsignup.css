@@ -21,13 +21,12 @@ width:50px;
 }
 .signup .form {
   padding: 1rem;
-  width: 70%;
-  border: 2px solid black;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
-  background-color:chocolate;
-  text-align: center;
-  align-items: center;
+  background-color:white;
+  border-radius: 25px;
+
 }
 .login .form {
   padding: 1rem;
@@ -99,7 +98,7 @@ a {
 /* color: aliceblue; */
 align-items: left;
 }
-.already-account,.forget-password{
+.already-account,.forget-password,.any-problem{
   font-size: 15px;
 }
 .signInWith {

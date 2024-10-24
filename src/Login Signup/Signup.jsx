@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
-import swal from 'sweetalert';
-import { Button, TextField } from '@mui/material';
-import Header from '../Header Footer/Header.js';
-import Footer from '../Header Footer/Footer.jsx';
+import React, { useState } from "react";
+import swal from "sweetalert";
+import { Button, TextField } from "@mui/material";
+import appIcon from "../Images/icons/appIcon.svg";
+import Header from "../Header Footer/Header.js";
+import Footer from "../Header Footer/Footer.jsx";
 function SignUp() {
   const [name, setName] = useState("");
   // const [lastName, setLastName] = useState("");
@@ -11,7 +12,6 @@ function SignUp() {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState(null);
   const [passwordType, setPasswordType] = useState("password");
-  
 
   const validateEmail = (email) => {
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -19,12 +19,13 @@ function SignUp() {
   };
 
   const validatePassword = (password) => {
-    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    const passwordRegex =
+      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
     return passwordRegex.test(password);
   };
 
   const handlePasswordToggle = () => {
-    setPasswordType(passwordType === 'password' ? 'text' : 'password');
+    setPasswordType(passwordType === "password" ? "text" : "password");
   };
 
   const handleSignUp = () => {
@@ -38,15 +39,17 @@ function SignUp() {
           swal({
             title: "Wow!",
             text: "Message!",
-            type: "success"
-        }).then(function() {
+            type: "success",
+          }).then(function () {
             window.location = "#";
-        });
+          });
         } else {
           setError("Passwords do not match!");
         }
       } else {
-        setError("Password must be at least 8 characters long, contain at least one uppercase letter, one lowercase letter, one number, and one special character!");
+        setError(
+          "Password must be at least 8 characters long, contain at least one uppercase letter, one lowercase letter, one number, and one special character!"
+        );
       }
     } else {
       setError("Check your email ID!");
@@ -55,64 +58,114 @@ function SignUp() {
 
   return (
     <>
-    <Header />
-    <div className="App">
-    <div className="all-content-center">
-      <div className="signup">
-    <div className="form">
-      <p>Welcome to</p>
-        <h1> CoffeeBreak ☕</h1>
-        <p>We serve coffee from all around the world.<br/>Create a free account and enjoy it!</p>
-        <TextField 
-        id="standard-basic" 
-        label="Enter  Name" 
-        InputLabelProps={{style : {color : 'white'} }} 
-        variant="standard" 
-        onChange={(e) => setName(e.target.value)} 
-        />
-        <br /><br />
-        <TextField
-         id="standard-basic"
-          label="Enter  Email" 
-          InputLabelProps={{style : {color : 'white'} }}
-          variant="standard"
-          onChange={(e) => setEmail(e.target.value)} 
-        />
-        <br /><br />
-        <TextField 
-          id="standard-password-input"
-          InputLabelProps={{style : {color : 'white'} }} 
-          label="Password" 
-          type={passwordType} 
-          autoComplete="current-password" 
-          variant="standard"
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <br /><br />
-        <TextField
-        id="standard-password-input"
-        InputLabelProps={{style : {color : 'white'} }} 
-        type={passwordType} 
-        label="Confirm password" 
-        variant="standard" 
-        onChange={(e) => setConfirmPassword(e.target.value)} 
-        />
-        <br/>
-         <Button style={{ color: 'white' }} variant="text" className="show-password" onClick={handlePasswordToggle}>
-          {passwordType === 'password' ? 'Show' : 'Hide'}
-        </Button><br/><br/>
-        <Button variant="contained" onClick={handleSignUp}>Register</Button>
-        {error && <p style={{ color: error === "Signup successful!" ? 'green' : 'red' }}>{error}</p>}
-              <br/><br/><br/><br/>
-              <p className='already-account'> Already have an account ?</p>
-              <Button variant="contained" className='already-account-button'color='secondary' >Log in</Button>
+      <Header />
+      <div className="App">
+        <div className="all-content-center">
+          <div className="signup">
+            <div className="form">
+              <img src={appIcon} alt="app-logo" className="app-logo" />
+              <h1>Sign Up</h1>
+              <p class="text-warning">Register New Account</p>
+              <TextField
+                className="input-filed"
+                id="standard-basic"
+                label="Enter  Name"
+                InputLabelProps={{ style: { color: "black" } }}
+                variant="standard"
+                onChange={(e) => setName(e.target.value)}
+              />
+              <br />
+              <br />
+              <TextField
+                className="input-filed"
+                id="standard-basic"
+                label="Email or Phone"
+                InputLabelProps={{ style: { color: "black" } }}
+                variant="standard"
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <br />
+              <br />
 
+              <TextField
+                className="input-filed"
+                id="standard-password-input"
+                InputLabelProps={{ style: { color: "black" } }}
+                label="Password"
+                type={passwordType}
+                autoComplete="current-password"
+                variant="standard"
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              <br />
+              <br />
+              <TextField
+                className="input-filed"
+                id="standard-password-input"
+                InputLabelProps={{ style: { color: "black" } }}
+                type={passwordType}
+                label="Confirm password"
+                variant="standard"
+                onChange={(e) => setConfirmPassword(e.target.value)}
+              />
+              <br />
+              <Button
+                style={{ color: "black" }}
+                variant="text"
+                className="show-password"
+                onClick={handlePasswordToggle}
+              >
+                {passwordType === "password" ? "Show" : "Hide"}
+              </Button>
+              <br />
+              <div className="rememberMe">
+                <input
+                  type="checkbox"
+                  name=""
+                  id="Checkbox"
+                  className="checkbox"
+                />
+                <label for="Checkbox">
+                  I agree with <a href="/">Terms Of Services</a> and
+                  <a href="/">Policy Privacy</a>
+                </label>
               </div>
-              </div>
-    </div>
-    </div>
-<Footer />
-</>
+              <br />
+              <button
+                className="signin-btn"
+                onClick={handleSignUp}
+                id="Submit-btn"
+                
+              >
+                Sign Up
+              </button>
+              <br />
+              <p className="any-problem">
+                Your have any problem? <a href="/">Help</a>
+              </p>
+
+              {error && (
+                <p
+                  style={{
+                    color: error === "Signup successful!" ? "green" : "red",
+                  }}
+                >
+                  {error}
+                </p>
+              )}
+              <br />
+              <br />
+              <p className="already-account">
+                {" "}
+                Already have an account ?<a href="/">Sign In</a>
+              </p>
+              {/* <Button variant="contained" className='already-account-button'color='secondary' >Log in</Button> */}
+            </div>
+          </div>
+        </div>
+      </div>
+      <Footer />
+    </>
   );
 }
 
