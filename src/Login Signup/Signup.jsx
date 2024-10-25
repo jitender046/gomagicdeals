@@ -127,7 +127,7 @@ function SignUp() {
                 />
                 <label for="Checkbox">
                   I agree with <a href="/terms">Terms Of Services</a> and
-                  <a href="/privacy"> Policy Privacy</a>
+                  <a href="/privacy"> Privacy Policy</a>
                 </label>
               </div>
               <br />
@@ -141,7 +141,7 @@ function SignUp() {
               </button>
               <br />
               <p className="any-problem">
-                Your have any problem? <a href="/contact">Help</a>
+               Do you have any problem? <a href="/contact">Help</a>
               </p>
 
               {error && (
@@ -156,10 +156,8 @@ function SignUp() {
               <br />
               <br />
               <p className="already-account">
-                {" "}
                 Already have an account ?<a href="/login">Sign In</a>
               </p>
-              {/* <Button variant="contained" className='already-account-button'color='secondary' >Log in</Button> */}
             </div>
           </div>
         </div>

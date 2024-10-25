@@ -9,6 +9,8 @@ import QuizTest from "./QuickScreen/Quickscreen test.jsx";
 import WeatherApp from "./WeatherApp/WeatherApp.jsx";
 import PrivacyPolicy from "./All pages/PrivacyPolicy.jsx";
 import Contact from "./All pages/contactus.jsx";
+import Terms from "./All pages/Terms & services.jsx";
+import About from "./All pages/Aboutus.jsx";
 
 const AllRoute = () => {
   return (
@@ -22,6 +24,8 @@ const AllRoute = () => {
       <Route path="/weather" element={<WeatherApp />} />
       <Route path="/privacy" element={<PrivacyPolicy />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/terms" element={<Terms />} />
+      <Route path="/about" element={<About />} />
 
     </Routes>
   )

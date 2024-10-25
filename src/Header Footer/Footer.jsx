@@ -32,13 +32,13 @@ function Footer() {
                 <h6 className="footer-heading">Resources</h6>
               </li>
               <li>
-                <Link to="/youtube">Youtube</Link>
+                <Link to="/about">About us</Link>
               </li>
               <li>
                 <Link to="/privacy">Privacy Policy</Link>
               </li>
               <li>
-                <Link to="/ter">Term & Service</Link>
+                <Link to="/terms">Term & Service</Link>
               </li>
             </ul>
           </section>

@@ -52,7 +52,7 @@ function Login() {
                 label="Email or Phone"
                 InputLabelProps={{ style: { color: "black" } }}
                 variant="standard"
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={(e) => setEmail(e.target.value)} 
               />
               <br />
               <br />
@@ -71,16 +71,15 @@ function Login() {
                   type="checkbox"
                   name=""
                   id="Checkbox"
-                  className="checkbox"
+                  className="checkbox" 
                 />
-                <label for="">Remember Me</label>
+                <label for="Checkbox">Remember Me</label>
               </div>
               <br />
               <button
                 className="signin-btn"
                 onClick={handleLogin}
                 id="Submit-btn"
-                disabled
               >
                 Sign In
               </button>
