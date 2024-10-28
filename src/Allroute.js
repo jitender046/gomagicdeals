@@ -11,6 +11,7 @@ import PrivacyPolicy from "./All pages/PrivacyPolicy.jsx";
 import Contact from "./All pages/contactus.jsx";
 import Terms from "./All pages/Terms & services.jsx";
 import About from "./All pages/Aboutus.jsx";
+import Service from "./All pages/Service.jsx";
 
 const AllRoute = () => {
   return (
@@ -26,6 +27,7 @@ const AllRoute = () => {
       <Route path="/contact" element={<Contact />} />
       <Route path="/terms" element={<Terms />} />
       <Route path="/about" element={<About />} />
+      <Route path="/services" element={<Service />} />
 
     </Routes>
   )

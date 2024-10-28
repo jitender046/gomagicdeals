@@ -128,3 +128,41 @@ text-align: center;
    p{
      font-size: 20px;
    }
+   /* ......................Services page................................. */
+   .all-cards{
+    height: 100vh;
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+   }
+   .card{
+    width: 200px;
+    height: 80px;
+    display: flex;
+    background-color:rgba(238, 234, 246, 0.907);
+    padding: 10px;
+    border-radius: 20px;
+   }
+   .card:hover{
+    padding: 0%;
+    h2{
+      display: none;
+    }
+    img{
+      width: 200px;
+      height: 80px;
+    }
+   }
+   .all-cards img{
+    height:60px;
+    width: 70px;
+    border-radius: 20px;
+    border: 2px solid pink;
+   }
+   .all-cards h2{
+    font-size: 25px;
+    margin-top: auto;
+    margin-bottom: auto
+   }
