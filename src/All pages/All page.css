@@ -130,22 +130,32 @@ text-align: center;
    }
    /* ......................Services page................................. */
    .all-cards{
-    height: 100vh;
+    height: fit-content;
     justify-content: space-evenly;
     display: grid;
     grid-template-columns: auto auto auto auto;
     margin-top: 5%;
     margin-bottom: 5%;
+    border: #ea3a60;
    }
-   .card{
+   @media screen and (max-width: 768px) {
+    .all-cards{
+      grid-template-columns: auto auto;
+    }
+    
+   }
+ 
+   .all-cards .card{
     width: 200px;
     height: 80px;
     display: flex;
     background-color:rgba(238, 234, 246, 0.907);
     padding: 10px;
     border-radius: 20px;
+    margin: 5%;
    }
-   .card:hover{
+
+   .all-cards .card:hover{
     padding: 0%;
     h2{
       display: none;
@@ -160,9 +170,126 @@ text-align: center;
     width: 70px;
     border-radius: 20px;
     border: 2px solid pink;
-   }
-   .all-cards h2{
-    font-size: 25px;
     margin-top: auto;
     margin-bottom: auto
    }
+   .all-cards h2{
+    font-size: 20px;
+    margin: auto auto auto auto;
+
+   }
+   @media screen and (max-width: 992px) {
+    .all-cards .card{
+      width: 150px;
+      height: 70px;
+     }
+     .all-cards img{
+      height: 50px;
+     }
+     .all-cards h2{
+      font-size: 15px;
+     }
+   }
+   /* ........................Resume...................................... */
+   body {
+    font-family: Arial, sans-serif;
+  }
+  .resume-maker{background-color: cornflowerblue;
+  }
+  .resume-maker h1,h2{
+    font-size: 30px;
+    text-align: center;
+    padding:2%;
+  }
+  form{margin: 2%;}
+  
+  h1, h2, h3, h4 {
+    color: #333;
+  }
+  
+  .input-text {
+    margin: 20px;
+    display:grid;
+    grid-template-columns: auto auto auto;
+  }
+  
+  .input-text input{
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  #project-name{
+    width: 30%;
+    padding: 10px;
+    margin: 10px ;
+    gap: 3%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+
+  }
+  .textarea-box .form-group{
+    width: 80%;
+    margin-left: auto;
+    margin-right:auto;
+  }
+  .Radio-button{
+    margin: 10px;
+   text-align: center;
+   font-size: 30px;
+  }
+  .Radio-button input{
+    margin-left: 50px;
+    width: 20px;
+    height: 20px;
+  }
+  button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  /* .........................resume preview................ */
+  .resume-preview {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 4px;
+    border: 2px solid green;
+
+  }
+  .resume-header{
+    border: 2px solid red;
+  }
+  .resume-header h3{
+    text-align: center;
+    font-size:  35px;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  .personal-info{
+    width: 100%;
+    border: 2px solid red;
+    justify-content:space-around ;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .resume-section{
+    border: 2px solid blue;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
