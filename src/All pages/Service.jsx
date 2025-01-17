@@ -1,6 +1,7 @@
 import React from "react";
 import Header from '../Header Footer/Header'
 import Footer from '../Header Footer/Footer'
+import Itsme from "../Components/Its me";
 
 function Service() {
     return(
@@ -89,6 +90,7 @@ function Service() {
             </div>
             
         </div>
+        <Itsme/>
         <Footer/>
         </>
     );
