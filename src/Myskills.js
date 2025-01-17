@@ -5,38 +5,40 @@ import { faHtml5,faCss3Alt,faJs,faReact} from '@fortawesome/free-brands-svg-icon
 function Myskills(){
 return(
     <>
-    
     <section class="skill_cards">
         <div class="services" id="services">
-            <div class="container">
+            <div class="skills-container">
                 <h1 class="sub-title">My <span>Skiils</span></h1>
                 <div class="services-list">
                     
                     <div>
                     <i id="html"><FontAwesomeIcon icon={faHtml5} /></i>
                         <h2>HTML</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam perspiciatis fugit debitis laudantium, sed numquam neque at, praesentium exercitationem culpa ipsam? Nihil.
-                        </p>
+                        <p>
+                        Hypertext Markup Language is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content.                        </p>
                         <a href="https://jitendershakya046.blogspot.com/2024/05/html.html" class="read">Learn More</a>
                     </div>
                     <div>
                         <i id="css"><FontAwesomeIcon icon={faCss3Alt} /></i>
                       <h2>CSS</h2>
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam perspiciatis fugit debitis laudantium, sed numquam neque at, praesentium exercitationem culpa ipsam? Nihil.
+                      <p>
+                      CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.
                       </p>
                       <a href="/css" class="read">Learn More</a>
                   </div>
                     <div>
                         <i id="javascript"><FontAwesomeIcon icon={faJs} /></i>
                         <h2>JavaScript</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam perspiciatis fugit debitis laudantium, sed numquam neque at, praesentium exercitationem culpa ipsam? Nihil.
+                        <p>
+                        JavaScript (JS) is a programming language that allows developers to create interactive web pages. It's a core technology of the World Wide Web.
                         </p>
                         <a href="/JavaScript" class="read">Learn More</a>
                     </div>
                     <div>
                         <i id="react"><FontAwesomeIcon icon={faReact} /></i>
                         <h2>React</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam perspiciatis fugit debitis laudantium, sed numquam neque at, praesentium exercitationem culpa ipsam? Nihil.
+                        <p>
+                        React is the library for web and native user interfaces. Build user interfaces out of individual pieces called components written in JavaScript.
                         </p>
                         <a href="/React" class="read">Learn More</a>
                     </div>
@@ -44,7 +46,7 @@ return(
             </div>
         </div>
     </section>
-    <section>
+    <section className="skills-bar">
         <div class="container1" id="skills">
             
             <h1 class="heading1">Technical Skills</h1>

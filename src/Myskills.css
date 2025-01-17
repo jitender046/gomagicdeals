@@ -10,20 +10,28 @@
 .sub-title{
     text-align: center;
     font-size: 60px;
-    padding-bottom: 70px;
+    padding-bottom: 20px;
+    width: 100%;
+    color:white;
 }
 .sub-title span{
     color: #0ef;
 }
-.skill_cards{display: block;}
-.container{
-    padding: 90px;
+.skill_cards{
+    display: block;
+    background-color: #081b29;
+    height: 650px;
+    color: white;
+}
+.skills-container{
+    margin-left: 5%;
+    margin-right: 5%;
 }
 .services-list{
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 20px;
 }
 .services-list div{
     background-color: transparent;
@@ -44,6 +52,7 @@
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
+    color: white;
 }
 .services-list div a{
     text-decoration: none;
@@ -78,13 +87,15 @@
 section{
     display: flex;
 }
+.skills-bar{
+    background-color: #081b29;
+    color: white;
+}
 .container1{
     width: 75%;
     height: 500px;
     margin-left: 120px;
     margin-right: 120px;
-
-
 }
 .heading1{
     text-align: center;
@@ -92,6 +103,7 @@ section{
     text-underline-offset: 10px;
     text-decoration-thickness: 5px;
     margin-bottom: 50px;
+    color: white;
 }
 .bar{
     font-size: 23px;
@@ -297,13 +309,13 @@ section{
 
 }
 @media screen and (max-width: 430px) {
-    .container{padding: 40px;}
+    .skills-container{padding: 40px;}
     .container1 {
         margin-left: 50px;
         margin-right: 50px;
     }
 }
 @media screen and (max-width: 320px) {
-    .container{padding: 0%;}
+    .skills-container{padding: 0%;}
     .container1{width:75%;margin-left: 40px; margin-right: 40px;}   
 }
