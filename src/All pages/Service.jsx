@@ -67,6 +67,26 @@ function Service() {
                 <img src={require("../Images/csc/Sarkari.png")} alt=""/>
                 <h2>Sarkari Form</h2>
             </div>
+            <div className="card">
+                <img src={require("../Images/csc/Domicile.jpg")} alt=""/>
+                <h2>Domicile</h2>
+            </div>
+            <div className="card">
+                <img src={require("../Images/csc/Caste.jpg")} alt=""/>
+                <h2>Caste Certificate</h2>
+            </div>
+            <div className="card">
+                <img src={require("../Images/csc/Income.jpg")} alt=""/>
+                <h2>Income Certificate</h2>
+            </div>
+            <div className="card">
+                <img src={require("../Images/csc/Awas.jpg")} alt=""/>
+                <h2>Awas yojana</h2>
+            </div>
+            <div className="card">
+                <img src={require("../Images/csc/Ujjwala.avif")} alt=""/>
+                <h2>Ujjwala Yojana 2.0</h2>
+            </div>
             
         </div>
         <Footer/>
