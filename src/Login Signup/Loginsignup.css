@@ -50,7 +50,7 @@ width:50px;
 .textfiled-gap{
   margin-right: 16px;
 }
-a {
+.login .signup a {
   text-decoration: none;
   color: rgb(255 4 95);
 }

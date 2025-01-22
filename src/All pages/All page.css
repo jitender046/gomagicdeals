@@ -1,4 +1,8 @@
 
+/* .........................Aboutus page................................. */
+.about-bg{
+  background-color: #081b29;
+}
 /* .................Contact page....................... */
 .contact{
   margin-top:100px;
@@ -45,6 +49,8 @@ text-align: center;
     width: 70%;
     padding: 25px;
     font-size: 20px;
+    margin-left: 15%;
+    border: 1px solid gray;
 }
 .form-page button{
     margin-top: 20px;
@@ -203,9 +209,9 @@ text-align: center;
   }
   form{margin: 2%;}
   
-  h1, h2, h3, h4 {
+  /* .resume-maker ,h1, h2, h3, h4 {
     color: #333;
-  }
+  } */
   
   .input-text {
     margin: 20px;

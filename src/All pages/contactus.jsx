@@ -62,7 +62,7 @@ function Contact() {
           <h2>
             Instagram{" "}
             <a href="https://www.instagram.com/jitendershakya046">
-            <FontAwesomeIcon icon={faInstagram} />
+            {/* <FontAwesomeIcon icon={faInstagram} /> */}
             </a>
           </h2>
         </section>
@@ -73,7 +73,7 @@ function Contact() {
           <h2>
             Facebook{" "}
             <a href="https://www.facebook.com/people/Jitender-Shakya/100089951974887">
-            <FontAwesomeIcon icon={faFacebook} />
+            {/* <FontAwesomeIcon icon={faFacebook} /> */}
          </a>
           </h2>
         </section>
@@ -84,7 +84,7 @@ function Contact() {
           <h2>
             Linked In{" "}
             <a href="/contacts">
-            <FontAwesomeIcon icon={faLinkedin} />
+            {/* <FontAwesomeIcon icon={faLinkedin} /> */}
             </a>
           </h2>
         </section>

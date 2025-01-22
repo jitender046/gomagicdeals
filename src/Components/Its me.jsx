@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook,faInstagram,faSkype,faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Typed from "typed.js";
-import Myskills from "../Myskills";
 function Itsme() {
   const typedOptions = {
     strings: ["Web Designer", "QA Analyst"],
@@ -76,7 +75,6 @@ function Itsme() {
     <a href="#" class="btn-box">More About Me</a>
 </div>
 </section>
-<Myskills/>
 </>
 
   );
