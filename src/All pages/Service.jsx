@@ -1,6 +1,7 @@
 import React from "react";
 import Header from '../Header Footer/Header'
 import Footer from '../Header Footer/Footer'
+import { Link } from "react-router-dom";
 
 function Service() {
     return(
@@ -89,6 +90,7 @@ function Service() {
             </div>
             
         </div>
+        <h2>For more details <Link to="/workdetails">Click</Link></h2>
         <Footer/>
         </>
     );

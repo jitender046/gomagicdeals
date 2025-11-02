@@ -13,6 +13,7 @@ import Terms from "./All pages/Terms & services.jsx";
 import About from "./All pages/Aboutus.jsx";
 import Service from "./All pages/Service.jsx";
 import ResumeMaker from "./All pages/Resume.jsx";
+import Workdetails from "./Csc works/Cscworkdetail.jsx";
 
 const AllRoute = () => {
   return (
@@ -30,6 +31,7 @@ const AllRoute = () => {
       <Route path="/about" element={<About />} />
       <Route path="/services" element={<Service />} />
       <Route path="/resume" element={<ResumeMaker />} />
+      <Route path="/workdetails" element={<Workdetails />} />
 
     </Routes>
   )

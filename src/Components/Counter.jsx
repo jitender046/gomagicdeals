@@ -3,7 +3,7 @@ import './All Components.css';
 
 const Counter = () => {
     const countersRef = useRef([]);
-    const speed = 200; // The lower the slower
+    const speed = 20000; // The lower the slower
 
     const updateCount = (counter, target) => {
         const count = +counter.innerText;

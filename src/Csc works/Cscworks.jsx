@@ -3,11 +3,11 @@ import Slider from "react-slick";
 import "../coffee/Coffee.css"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import {Link} from 'react-router-dom'
-import Counter from "../Components/Counter";
+// import {Link} from 'react-router-dom'
+// import Counter from "../Components/Counter";
 
 function AutoPlayMethods() {
-  let sliderRef= useRef(null);
+  let sliderRef= useRef( );
 //   const play = () => {
 //     sliderRef.slickPlay();
 //   };
@@ -80,7 +80,7 @@ function AutoPlayMethods() {
             Pause
           </button>
         </div> */}
-        <Counter />
+        {/* <Counter />
         <div className="skip-line">
           <hr />
           <span><Link to="/signup">Sign_Up</Link></span>
@@ -88,7 +88,7 @@ function AutoPlayMethods() {
 
 <div className="Login-div">
   <button className="login"><Link to="/login" className="link-color">Log in</Link></button>
-</div>
+</div> */}
       </div>
     </div>
   );
